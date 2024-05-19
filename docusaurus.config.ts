@@ -39,6 +39,13 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          versions: {
+            current: {
+              label: "Current",
+            },
+          },
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -55,10 +62,45 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Algolia config
+    algolia: {
+      // The application ID provided by Algolia
+      appId: "R2IYF7ETH7",
+
+      // Public API key: it is safe to commit it
+      apiKey: "599cec31baffa4868cae4e79f180729b",
+
+      indexName: "docsearch",
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      externalUrlRegex: "external\\.com|domain\\.com",
+
+      // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+      replaceSearchResultPathname: {
+        from: "/docs/", // or as RegExp: /\/docs\//
+        to: "/",
+      },
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: "search",
+
+      // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
+      insights: false,
+
+      //... other Algolia params
+    },
+
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "知识库",
+      hideOnScroll: true,
+      title: "",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
@@ -66,17 +108,18 @@ const config: Config = {
       items: [
         {
           type: "docsVersionDropdown",
+          position: "right",
         },
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
+          className: "header--github-link",
+          href: "https://github.com/wylu1037/docs-website",
           position: "right",
         },
       ],

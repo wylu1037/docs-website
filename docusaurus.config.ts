@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 import tailwindPlugin from "./plugins/tailwind-plugin.cjs";
 
 const config: Config = {
-  title: "My Site",
+  title: "Wenyang Lu Site",
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
@@ -27,7 +27,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "zh-Hans",
-    locales: ["zh-Hans"],
+    locales: ["zh-Hans", "en"],
   },
 
   plugins: [tailwindPlugin],
@@ -114,6 +114,10 @@ const config: Config = {
           position: "right",
         },
         {
+          type: "localeDropdown",
+          position: 'right',
+        },
+        {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
@@ -131,78 +135,44 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Document",
           items: [
             {
               label: "Tutorial",
               to: "/docs/intro",
             },
-          ],
-        },
-        {
-          title: "Work",
-          items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Configuration",
+              to: "/docs/intro",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              label: "Custom style",
+              to: "/docs/intro",
             },
           ],
         },
         {
-          title: "Travel",
+          title: "Project",
           items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "Study",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "We",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
+              href: "https://github.com/wylu1037/docs-website",
+            }
           ],
         },
+        {
+          title: "More for me",
+          items: [
+            {
+              label: "GitHub profile",
+              href: "https://github.com/wylu1037",
+            },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/docusaurus",
+            },
+          ],
+        }
       ],
       /*copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,*/
       copyright: `Copyright © 2024 Docs, Inc. Built with Docusaurus.`,

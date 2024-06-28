@@ -64,16 +64,17 @@ const config: Config = {
     ],
   ],
 
+  themes: ['@docusaurus/theme-search-algolia'],
   themeConfig: {
     // Algolia config
     algolia: {
       // The application ID provided by Algolia
-      appId: "R2IYF7ETH7",
+      appId: "TKJ312CV0X",
 
       // Public API key: it is safe to commit it
-      apiKey: "599cec31baffa4868cae4e79f180729b",
+      apiKey: "289b927c1006a9da3e597f408754b6e2",
 
-      indexName: "docsearch",
+      indexName: "DocsLabSearch",
 
       // Optional: see doc section below
       contextualSearch: true,

@@ -64,7 +64,7 @@ const config: Config = {
     ],
   ],
 
-  themes: ['@docusaurus/theme-search-algolia'],
+  //themes: ['@docusaurus/theme-search-algolia'],
   themeConfig: {
     // Algolia config
     algolia: {
@@ -104,9 +104,9 @@ const config: Config = {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       hideOnScroll: true,
-      title: "",
+      title: "Luke",
       logo: {
-        alt: "My Site Logo",
+        alt: "Wenyang Lu Site Logo",
         src: "img/logo.svg",
       },
       items: [

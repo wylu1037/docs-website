@@ -44,7 +44,7 @@ const config: Config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           versions: {
             current: {
-              label: "Current",
+              label: "📚 Latest",
             },
           },
           showLastUpdateAuthor: true,
@@ -140,7 +140,7 @@ const config: Config = {
           items: [
             {
               label: "Tutorial",
-              to: "/docs/intro",
+              href: "https://docusaurus.io/docs/3.1.1",
             },
             {
               label: "Configuration",

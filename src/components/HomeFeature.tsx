@@ -26,7 +26,7 @@ export default function HomeFeature() {
                                 </div>
                                 Push to deploy
                             </dt>
-                            <dd className="mt-2 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus
+                            <dd className="mt-2 -ml-0 text-base leading-7 text-gray-600">Morbi viverra dui mi arcu sed. Tellus
                                 semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.
                             </dd>
                         </div>
@@ -42,7 +42,7 @@ export default function HomeFeature() {
                                 </div>
                                 SSL certificates
                             </dt>
-                            <dd className="mt-2 text-base leading-7 text-gray-600">Sit quis amet rutrum tellus
+                            <dd className="mt-2 -ml-0 text-base leading-7 text-gray-600">Sit quis amet rutrum tellus
                                 ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus
                                 amet.
                             </dd>
@@ -59,7 +59,7 @@ export default function HomeFeature() {
                                 </div>
                                 Simple queues
                             </dt>
-                            <dd className="mt-2 text-base leading-7 text-gray-600">Quisque est vel vulputate cursus.
+                            <dd className="mt-2 -ml-0 text-base leading-7 text-gray-600">Quisque est vel vulputate cursus.
                                 Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.
                             </dd>
                         </div>
@@ -75,7 +75,7 @@ export default function HomeFeature() {
                                 </div>
                                 Advanced security
                             </dt>
-                            <dd className="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in
+                            <dd className="mt-2 -ml-0 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in
                                 ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.
                             </dd>
                         </div>

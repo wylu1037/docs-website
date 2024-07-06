@@ -1,6 +1,6 @@
 export default function HomeFeature() {
     return <>
-        <div className="bg-white py-24 sm:py-16">
+        <div className="bg-gradient-to-r from-blue-50 to-pink-50 py-24 sm:py-16">
             <div className="px-6 lg:px-8">
                 {/*文字展示*/}
                 <div className="mx-auto max-w-2xl lg:text-center">
